@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div class="container col-md-4 py-5">
+    <form>
+
+        <h2>Contact Us</h2>
+
+        <div class="row">
+
+            <div class="form-group py-3 col-md-6">
+
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" class="form-control">
+
+                <div class="alert alert-danger d-none" id="validText">
+                    <p>please enter valid name from 3 to 8 characters With Upper case letter</p>
+    
+                </div>
+    
+                </div>
+            <div class="form-group py-3 col-md-6">
+    
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" class="form-control" >
+
+                <div class="alert alert-danger d-none" id="validText2">
+                    <p>please enter valid name from 3 to 8 characters With Upper case letter</p>
+    
+                </div>
+    
+                </div>
+    
+        </div>
+
+        <div class="col-md-12  form-group">
+            <label for="email">Email Address </label>
+            <input id="email" class="form-control" type="email" name="">
+            
+            <div class="alert alert-danger d-none" id="validMail">
+                <p>please enter valid mail address  </p>
+
+            </div>
+
+        </div>
+
+         <div class="row">
+           <p class="py-3">Query Type</p>
+            <div class="form-group  col-md-6">
+                <div class="query">
+                    <input type="radio" name="queryType" ><label >General Enquiry</label>
+
+                </div>
+                </div>
+            <div class="form-group  col-md-6">
+                <div class="query">
+                <input type="radio" name="queryType"><label>Support Request</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 py-3  form-group" >
+
+         <label for="message">Message</label>
+      <textarea name="" id="message" class="form-control"></textarea>
+
+      <input type="checkbox" ><label class="m-1">I consent to being contacted by the team</label>
+
+        </div>
+        <div class="col-md-12 py-3  form-group" >
+<button class="form-control btn btn-success" id="submitButton">Submit</button>
+        </div>
+
+        
+      
+
+        </div>
+    </form>
+   </div>
+    <script src="./js.js"></script>
+</body>
+</html>
